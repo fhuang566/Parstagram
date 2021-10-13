@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
         let username = usernameField.text!
         let password = passwordField.text!
         
+        print("username = \(username)")
+        print("password = \(password)")
         PFUser.logInWithUsername(inBackground: username, password: password){
             (user, error) in
             if user !=  nil{
